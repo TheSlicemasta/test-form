@@ -1,0 +1,14 @@
+@media 
+(-webkit-min-device-pixel-ratio: 2), 
+(min-resolution: 192dpi) {
+	
+	.page {
+		&-media {
+			background-image: url($img+'media-1@2x.jpg');
+		}
+		&-media.media-signup {
+			background-image: url($img+'media-2@2x.jpg');
+		}
+	}
+
+}

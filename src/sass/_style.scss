@@ -1,0 +1,137 @@
+html, 
+body {
+	height:100%;
+	font-family: $ff;
+}
+
+.page {
+
+	&-logo {
+		display: block;
+		position: absolute;
+		z-index: 1;
+		top: 35px;
+		left: 0;
+		height: 46px;
+		width: 108px;
+		text-align: left;
+		text-indent: -100%;
+		background: url($img+'logo_blue.svg') 19px 50% no-repeat #fff;
+		background-size: 84px 24px;
+
+		&::after {
+			content: '';
+			display: block;
+			position: absolute;
+			top: 0;
+			right: -20px;
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 23px 0 23px 20px;
+			border-color: transparent transparent transparent #ffffff;
+		}
+	}
+
+	&-media {
+		position: relative;
+		height: 33vh;
+		background: url($img+'media-1.jpg') 50% 50% no-repeat;
+		background-size: cover;
+		clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);
+
+		background-position: 32% 81%;
+		background-size: auto 110%;
+
+		&.media-signup {
+			background-image: url($img+'media-2.jpg');
+			background-position: 61% 70%;
+			background-size: auto 105%;
+		}
+	}
+
+	&-form {
+		width: 100%;
+		max-width: 376px;
+		padding: 0 38px;
+		margin: 2.15rem auto;
+
+		h1 {
+			color: $color-title;
+			font-size: 24px;
+			font-weight: 500;
+			line-height: 28px;
+			margin-bottom: 1.875rem;
+		}
+
+		.form-group {
+			margin-bottom: .625rem;
+		}
+
+		input[type="text"],
+		input[type="password"],
+		input[type="email"] {
+			&.form-control {
+				height: 40px;
+				padding: 20px;
+				border: 1px solid #E0E0E0;
+				border-radius: 3px;
+				background-color: #fff;
+				font-family: $ff;
+				color: $color-input;							
+				font-size: 14px;
+				line-height: 16px;
+			}
+			&::placeholder {
+				opacity: 1;
+				color: $body-color;	
+			}
+		}
+
+		.btn {
+			font-size: 14px;
+			font-weight: 500;
+			max-width: 145px;
+			height: 36px;
+			line-height: 34px;
+			padding-top: 0;
+			padding-bottom: 0;
+			border-width: 2px;
+		}
+
+		.small {
+			font-weight: 500;
+		}
+
+		.custom-control-label::before,
+		.custom-control-label::after {
+			width: 1.125rem;
+			height: 1.125rem;
+			border-radius: 0;
+			box-shadow: none !important;
+			top: .15rem;
+		}
+
+		.up .custom-control-label::before,
+		.up .custom-control-label::after {
+			top: -.05rem;
+		}
+
+		.custom-control-label::before {
+			background: #fff;
+			border: 2px solid #E0E0E0;
+			border-radius: 1px;
+		}
+
+		.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+			border: none !important;
+		}
+	}
+
+	&-forgotlink {
+		font-size: 12px;
+		font-weight: 500;
+		line-height: 26px;
+	}
+
+}
