@@ -5048,6 +5048,11 @@ body {
 @media (max-width: 767.98px) {
   body {
     background: #fff; }
+  .page-media,
+  .page-media.media-signup {
+    background-position: 50% 50%;
+    -webkit-background-size: cover;
+            background-size: cover; }
   .page-media:not(.media-signup) {
     background-position: 32% 12%; }
   .page-loginbtn {

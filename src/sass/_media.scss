@@ -48,6 +48,12 @@
 		background: #fff;
 	}
 
+	.page-media,
+	.page-media.media-signup {
+		background-position: 50% 50%;
+		background-size: cover;
+	}
+
 	.page-media:not(.media-signup) {
 		background-position: 32% 12%;
 	}
